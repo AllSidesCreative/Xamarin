@@ -8,7 +8,9 @@ namespace moshbasic
         {
             InitializeComponent(); //deleting this doesn't seem to matter
 
-            MainPage = new GreetPage();
+            MainPage = new StackPage();
+                
+          //  MainPage = new GreetPage();
         }
 
         protected override void OnStart()

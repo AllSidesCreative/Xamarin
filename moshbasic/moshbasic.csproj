@@ -38,6 +38,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="StackPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -52,6 +56,9 @@
     </Compile>
     <Compile Include="tempPage.xaml.cs">
       <DependentUpon>tempPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StackPage.xaml.cs">
+      <DependentUpon>StackPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

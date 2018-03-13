@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+        Padding="0, 60, 0, 0"
+        xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="moshbasic.StackPage">
+    <StackLayout BackgroundColor="Yellow"
+                 Spacing="20"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center">
+    <Label Text="Label 1" BackgroundColor="Silver"/>
+    <Label Text="Label 2" BackgroundColor="Silver"/>
+    <Label Text="Label 3" BackgroundColor="Silver"/>
+        </StackLayout>
+</ContentPage>

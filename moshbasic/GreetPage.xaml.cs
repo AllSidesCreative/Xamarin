@@ -11,7 +11,8 @@ namespace moshbasic
             "Imagination is more important than knowledge.", 
             "The important thing is not to stop questioning. Curiosity has its own reason for existing." };
         private int current = 0;
-   
+        const int i = 0;
+
         public GreetPage()
         {
             InitializeComponent();
