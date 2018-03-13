@@ -1,5 +1,26 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="moshbasic.MyPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="moshbasic.GreetPage">
+    <StackLayout BindingContext="{x:Reference bindslider}" HorizontalOptions="Center" VerticalOptions="Center">
+
+   <!--  
+      <Button HorizontalOptions="Center" VerticalOptions="Center" Text="click me"
+           Clicked="Handle_Clicked">
+      </Button>-->
+    <Button Text="Next" Clicked="Handle_Clicked1"/>
+
+    <Slider ValueChanged="myValueChanged" x:Name="myslider"/>
+        
+    <Label Text="Einstein Quotes" x:Name="myLabel"/>  
+    <Label Text="Hello World " x:Name="label1" />
+    <Slider ValueChanged="Handle_ValueChanged" x:Name="slider"/>
+    <BoxView Color="Green" Opacity="{Binding Value}"/>
+    <Label
+           Text="{Binding Value,
+           StringFormat='Value is {0:F2}'}"  
+           Opacity="{Binding Value}"
+           
+            />
+    <Slider x:Name="bindslider"/>
+        
+    </StackLayout>
 </ContentPage>
